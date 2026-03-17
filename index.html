@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jim Ferencz — Web developer building clean, responsive websites</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:wght@600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="https://contra.com/jim_ferencz_sq7vqp4i" target="_blank" rel="noopener" class="logo">Jim Ferencz</a>
+      <nav class="nav">
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <h1>I build clean, responsive websites that work.</h1>
+        <p class="hero-lead">From landing pages to web apps—strategy, design, and development. Available for projects on Contra.</p>
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="section-inner">
+        <h2>What I do</h2>
+        <p class="section-lead">Clear, focused services to help you grow.</p>
+        <ul class="service-grid">
+          <li class="service-card">
+            <span class="service-icon" aria-hidden="true">◆</span>
+            <h3>Strategy</h3>
+            <p>Market research, positioning, and roadmaps so your product fits the market.</p>
+          </li>
+          <li class="service-card">
+            <span class="service-icon" aria-hidden="true">◇</span>
+            <h3>Design</h3>
+            <p>Brand identity, UI/UX, and design systems that look and feel professional.</p>
+          </li>
+          <li class="service-card">
+            <span class="service-icon" aria-hidden="true">○</span>
+            <h3>Development</h3>
+            <p>Clean, responsive websites and web apps—modern stack, built to last.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="section-inner contact-inner">
+        <div class="contact-intro">
+          <h2>Let's talk</h2>
+          <p>Tell me about your project. I'll get back within one business day.</p>
+        </div>
+        <form id="contactForm" class="contact-form" novalidate>
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Your name" />
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required placeholder="you@company.com" />
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required rows="5" placeholder="What are you looking to build?"></textarea>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-msg" id="formMsg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Jim Ferencz. <a href="https://contra.com/jim_ferencz_sq7vqp4i" target="_blank" rel="noopener">View my Contra profile</a>.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
