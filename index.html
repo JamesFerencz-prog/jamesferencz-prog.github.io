@@ -3,72 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jim Ferencz — Web developer building clean, responsive websites</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Jim Ferencz | Frontend Web Developer</title>
+  <meta name="description" content="Jim Ferencz builds clean, responsive websites and polished front-end experiences using HTML, CSS, and JavaScript." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:wght@600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
 
+<body>
   <header class="site-header">
-    <div class="header-inner">
-      <a href="https://contra.com/jim_ferencz_sq7vqp4i" target="_blank" rel="noopener" class="logo">Jim Ferencz</a>
-      <nav class="nav">
-        <a href="#hero">Home</a>
+    <div class="container header-inner">
+      <a class="logo" href="#home">Jim Ferencz</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#home">Home</a>
         <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="hero" class="hero">
-      <div class="hero-inner">
-        <h1>I build clean, responsive websites that work.</h1>
-        <p class="hero-lead">From landing pages to web apps—strategy, design, and development. Available for projects on Contra.</p>
-        <a href="#contact" class="btn btn-primary">Get in touch</a>
-      </div>
-    </section>
-
-    <section id="services" class="services">
-      <div class="section-inner">
-        <h2>What I do</h2>
-        <p class="section-lead">Clear, focused services to help you grow.</p>
-        <ul class="service-grid">
-          <li class="service-card">
-            <span class="service-icon" aria-hidden="true">◆</span>
-            <h3>Strategy</h3>
-            <p>Market research, positioning, and roadmaps so your product fits the market.</p>
-          </li>
-          <li class="service-card">
-            <span class="service-icon" aria-hidden="true">◇</span>
-            <h3>Design</h3>
-            <p>Brand identity, UI/UX, and design systems that look and feel professional.</p>
-          </li>
-          <li class="service-card">
-            <span class="service-icon" aria-hidden="true">○</span>
-            <h3>Development</h3>
-            <p>Clean, responsive websites and web apps—modern stack, built to last.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="section-inner contact-inner">
-        <div class="contact-intro">
-          <h2>Let's talk</h2>
-          <p>Tell me about your project. I'll get back within one business day.</p>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Frontend Web Developer</p>
+          <h1>I build clean, responsive websites that look modern and work smoothly.</h1>
+          <p class="hero-text">
+            I create polished landing pages, portfolio sites, and front-end web experiences
+            using HTML, CSS, and JavaScript with a focus on clarity, usability, and responsive design.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View My Work</a>
+            <a class="btn btn-secondary" href="#contact">Start a Project</a>
+          </div>
+          <ul class="hero-points">
+            <li>Responsive layouts for desktop, tablet, and mobile</li>
+            <li>Clean UI with organized front-end code</li>
+            <li>Professional websites for small businesses and personal brands</li>
+          </ul>
         </div>
+
+        <aside class="hero-panel">
+          <span class="status-pill">Available for freelance work</span>
+          <h2>What clients can expect</h2>
+          <div class="mini-grid">
+            <div class="mini-card">
+              <strong>Modern Design</strong>
+              <span>Clean sections, strong spacing, and a polished look.</span>
+            </div>
+            <div class="mini-card">
+              <strong>Responsive Build</strong>
+              <span>Layouts that adapt smoothly across screen sizes.</span>
+            </div>
+            <div class="mini-card">
+              <strong>Clear Communication</strong>
+              <span>Simple process, dependable updates, and on-time delivery.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>What I do</h2>
+          <p>Practical front-end work to help businesses and creators look professional online.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon">◆</div>
+            <h3>Landing Pages</h3>
+            <p>Clean, modern one-page sites that present your services clearly and guide visitors toward taking action.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">◇</div>
+            <h3>UI Polish & Responsiveness</h3>
+            <p>Better spacing, typography, and mobile layout so your site looks balanced and works on every screen.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">○</div>
+            <h3>Front-End Fixes (HTML/CSS/JS)</h3>
+            <p>Debugging and improvements to existing pages: broken layouts, small JavaScript issues, and UI updates.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Featured work</h2>
+          <p>A few examples of the kind of work I build and improve.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-tag">JavaScript App</span>
+            <h3>Student Task Tracker</h3>
+            <p>
+              A task management web app built to organize assignments, track deadlines,
+              and manage status labels in a clean interface.
+            </p>
+            <div class="project-links">
+              <a href="https://jamesferencz-prog.github.io/student-task-tracker/" target="_blank" rel="noopener">Live Demo</a>
+              <a href="https://github.com/jamesFerencz-prog/student-task-tracker" target="_blank" rel="noopener">Source Code</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-tag">Portfolio Site</span>
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              A modern portfolio homepage created to showcase services, projects,
+              and contact details in a professional layout.
+            </p>
+            <div class="project-links">
+              <a href="https://jamesferencz-prog.github.io/" target="_blank" rel="noopener">Live Site</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Professional, practical front-end development</h2>
+        </div>
+        <div>
+          <p>
+            I build websites with an emphasis on clean presentation, responsive design,
+            and straightforward user experience. My goal is to create pages that feel modern,
+            look professional, and support real client needs.
+          </p>
+          <p>
+            I enjoy turning ideas into working websites that are easy to navigate,
+            visually balanced, and ready to represent a business or brand online.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s talk about your project</h2>
+          <p>
+            Need a landing page, portfolio site, or front-end refresh? Send a message and I’ll
+            get back to you with the next steps.
+          </p>
+          <div class="contact-links">
+            <a href="https://contra.com/jim_ferencz_sq7vqp4i" target="_blank" rel="noopener">View my Contra profile</a>
+            <a href="https://jamesferencz-prog.github.io/" target="_blank" rel="noopener">Live portfolio link</a>
+          </div>
+        </div>
+
         <form id="contactForm" class="contact-form" novalidate>
-          <label for="name">Name *</label>
-          <input type="text" id="name" name="name" required placeholder="Your name" />
-          <label for="email">Email *</label>
-          <input type="email" id="email" name="email" required placeholder="you@company.com" />
-          <label for="message">Message *</label>
-          <textarea id="message" name="message" required rows="5" placeholder="What are you looking to build?"></textarea>
-          <button type="submit" class="btn btn-primary">Send message</button>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me what you want to build" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
           <p class="form-msg" id="formMsg" aria-live="polite"></p>
         </form>
       </div>
@@ -76,8 +187,9 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-inner">
-      <p>&copy; <span id="year"></span> Jim Ferencz. <a href="https://contra.com/jim_ferencz_sq7vqp4i" target="_blank" rel="noopener">View my Contra profile</a>.</p>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Jim Ferencz. All rights reserved.</p>
+      <a href="https://contra.com/jim_ferencz_sq7vqp4i" target="_blank" rel="noopener">Contra Profile</a>
     </div>
   </footer>
 
